@@ -22,7 +22,7 @@ function varargout = gui_startup(varargin)
 
 % Edit the above text to modify the response to help gui_startup
 
-% Last Modified by GUIDE v2.5 09-Jul-2018 15:25:01
+% Last Modified by GUIDE v2.5 09-Jul-2018 22:26:25
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -107,3 +107,25 @@ function menu_seg_set_Callback(hObject, eventdata, handles)
 % hObject    handle to menu_seg_set (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function menu_compute_Callback(hObject, eventdata, handles)
+% hObject    handle to menu_compute (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function menu_compute_FAZ_Callback(hObject, eventdata, handles)
+% hObject    handle to menu_compute_FAZ (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function menu_compute_FAZ_area_Callback(hObject, eventdata, handles)
+% hObject    handle to menu_compute_FAZ_area (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+gui_computearea
