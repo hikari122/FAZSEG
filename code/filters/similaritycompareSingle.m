@@ -1,7 +1,7 @@
 function coefficientsSingle = similaritycompareSingle(ref, seg, varargin)
 %% SIMILARITYCOMPARE compare similarity between 2 images
 % Input:
-% 	ref 	<M x N>: referece segmented ROI
+% 	ref 	<M x N>: referece segmented ROI, 0: 1 segmented pixel, 1: non-segment pixel
 % 	seg 	<M x N>: segmented ROI needing comparision
 % Output
 %   coefficiences: a table includes
@@ -11,7 +11,7 @@ function coefficientsSingle = similaritycompareSingle(ref, seg, varargin)
 %       spf     Specificity coeffcients 
 %       sbl     Sensibility coeffcients 
 % Optional:
-%   isshow  <logical>:  show
+%   isshow  <logical>:  show overlapping color image, TP, TN, FP, FN images
 %
 % Example:
 %   similaritycompareSingle(manual1, autoCCL, 10, 'isshow', 1, 'isprint', 1);
